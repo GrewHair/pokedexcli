@@ -26,7 +26,7 @@ func TestCleanInput(t *testing.T) {
 	for _, c := range cases {
 		actual := cleanInput(c.input)
 		if len(actual) != len(c.expected) {
-			t.Errorf("lengths don't match: expected '%v' (%d), got '%v' (%d)", len(actual), actual, len(c.expected), c.expected)
+			t.Errorf("lengths don't match: expected '%v' (%v), got '%v' (%v)", len(actual), actual, len(c.expected), c.expected)
 		}
 		for i := range actual {
 			word := actual[i]

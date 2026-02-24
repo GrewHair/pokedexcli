@@ -6,7 +6,7 @@ import (
 	"github.com/GrewHair/pokedexcli/internal/pokecache"
 )
 
-func commandHelp(cfg *config, cache *pokecache.Cache) error {
+func commandHelp(arg string, cfg *config, cache *pokecache.Cache, pokedex *map[string]Pokemon) error {
 	fmt.Println()
 	fmt.Println("Welcome to the Pokedex!")
 	fmt.Println("Usage:")
@@ -16,4 +16,3 @@ func commandHelp(cfg *config, cache *pokecache.Cache) error {
 	}
 	return nil
 }
-
